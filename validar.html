@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Andes_Electronica</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <body data-spy="scroll" data-target="#navbar-example" style="" class="fixed">
+<div class="container">
+  <h1><img src="ar.png">ANDES ELECTRONICA</h1>
+</div>
+<nav class="navbar navbar-default">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html">Home</a>
+
+  <!-- Links -->
+  <ul class="nav navbar-nav">
+    
+    
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> Administrador
+        </a>
+          <div>
+          </div>
+      </li>
+
+    <li class="nav-item dropdown">
+      
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inventario
+      </a>
+      <div class="dropdown-menu">
+        <a href="validar.html">Validar</a><br>
+        <a href="borrar.html">Borrar</a><br>
+        <a href="actualizar.html">Actualizar</a><br>
+        <a href="nuevo.html">Nuevo</a>
+      </div>
+    </li>
+
+     <li class="nav-item dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Utilidades</a>
+      <div class="dropdown-menu">
+        <a href="Calculator.html">Calculadora Ganancias</a>
+        <a href="Calculatorresistencia.html">Calculadora Resistencias</a>
+      </div>
+    </li>
+
+
+  </ul>
+</nav>
+<section class="central">
+    <article>
+     <p style="font-size:22px">
+    </p>
+    </article>
+
+    <div class="container">
+        <h2><center>CONSULTAR INVENTARIO</center></h2>    
+      
+        <form class="form-horizontal" action="insertar.php" role="form" method="POST">
+      
+          <div class="input">
+            <label>Codigo:</label>
+            <input type="text" class="form-control"  name="code" placeholder="Ingrese el codigo del producto que se encuentra en el inventario">
+          </div>      
+
+       <p></p>
+       <p></p>
+      
+      
+      <p></p>
+      <p></p>
+      
+          <button type="submit" style="display: block; text-align: center; margin: auto; width: 300px; background-color:silver;" name="submit" class="btn btn-default">Validar información</button>
+        </form>
+      
+      </div>
+      
+      <p></p>
+      <p></p>
+
+</body>
+<footer>
+
+    <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #675432;
+          color: white;
+          text-align: center;
+        }
+        </style>
+        
+        <div class="footer">
+    <h8>
+        Creado Por: Nicolas Muñoz Sandoval<br>
+        Curso: Programación de Sitios Web<br>
+        Codigo: 301127A_764<br>
+    </h8>
+        </div> 
+
+   </footer>
+</html>

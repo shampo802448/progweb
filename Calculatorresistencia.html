@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Andes_Electronica</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <body data-spy="scroll" data-target="#navbar-example" style="" class="fixed">
+<div class="container">
+  <h1><img src="ar.png">ANDES ELECTRONICA</h1>
+</div>
+<nav class="navbar navbar-default">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html">Home</a>
+
+  <!-- Links -->
+  <ul class="nav navbar-nav">
+    
+    
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> Administrador
+        </a>
+          <div>
+          </div>
+      </li>
+
+    <li class="nav-item dropdown">
+      
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inventario
+      </a>
+      <div class="dropdown-menu">
+        <a href="validar.html">Validar</a><br>
+        <a href="borrar.html">Borrar</a><br>
+        <a href="actualizar.html">Actualizar</a><br>
+        <a href="nuevo.html">Nuevo</a>
+      </div>
+    </li>
+
+     <li class="nav-item dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Utilidades</a>
+      <div class="dropdown-menu">
+        <a href="Calculator.html">Calculadora Ganancias</a>
+        <a href="Calculatorresistencia.html">Calculadora Resistencias</a>
+      </div>
+    </li>
+    
+    
+      </ul>
+    </nav>
+
+    <section class="central">
+      <article>
+       <p style="font-size:22px">
+      </p>
+      </article>
+<div class="container">
+
+ <!-- Inicio de la calculadora de resistencia -->
+   <h1><center>CALCULADORA RESISTENCIAS</center></p></h1> 
+
+
+<script>
+function calcular(){
+    
+    var a = document.f1.b1.value;
+    var b = document.f1.b2.value;
+    var x = document.f1.b3.value;
+    var r = document.f1.c.value;
+    r1= a.toString()+b.toString();
+    r=parseFloat(r1)*parseFloat(x);
+   document.f1.c.value=r;
+    
+}
+
+</script> 
+
+<form name="f1" action="resistencia.html" method="POST">
+    
+ <h6>Banda 1</h6>     
+<select name="b1" class="form-control">
+  <option value="0" style="background-color: black; color: white;" >Negro</option>
+  <option value="1" style="background-color: brown; color: white;" >Cafe</option>
+  <option value="2" style="background-color: red; color: white;" >Rojo</option>
+  <option value="3" style="background-color: orange; color: white;" >Naranja</option>
+  <option value="4" style="background-color: yellow; color: white;" >Amarillo</option>
+  <option value="5" style="background-color: green; color: white;" >Verde</option>
+  <option value="6" style="background-color: blue; color: white;" >Azul</option>
+  <option value="7" style="background-color: purple; color: white;" >Morado</option>
+  <option value="8" style="background-color: silver; color: white;" >Gris</option>
+  <option value="9" style="background-color: white; color: black;" >Blanco</option>
+
+</select>
+
+<br>
+
+ <h6>Banda 2</h6> 
+<select name="b2" class="form-control">
+  <option value="0" style="background-color: black; color: white;" >Negro</option>
+  <option value="1" style="background-color: brown; color: white;" >Cafe</option>
+  <option value="2" style="background-color: red; color: white;" >Rojo</option>
+  <option value="3" style="background-color: orange; color: white;" >Naranja</option>
+  <option value="4" style="background-color: yellow; color: white;" >Amarillo</option>
+  <option value="5" style="background-color: green; color: white;" >Verde</option>
+  <option value="6" style="background-color: blue; color: white;" >Azul</option>
+  <option value="7" style="background-color: purple; color: white;" >Morado</option>
+  <option value="8" style="background-color: silver; color: white;" >Gris</option>
+  <option value="9" style="background-color: white; color: black;" >Blanco</option>
+</select>
+
+<br>
+
+<h6>Banda 3</h6> 
+<select name="b3" class="form-control">
+  <option value="1" style="background-color: black; color: white;" >Negro</option>
+  <option value="10" style="background-color: brown; color: white;" >Cafe</option>
+  <option value="100" style="background-color: red; color: white;" >Rojo</option>
+  <option value="1000" style="background-color: orange; color: white;" >Naranja</option>
+  <option value="10000" style="background-color: yellow; color: white;" >Amarillo</option>
+  <option value="100000" style="background-color: green; color: white;" >Verde</option>
+  <option value="1000000" style="background-color: blue; color: white;" >Azul</option>
+  <option value="10000000" style="background-color: purple; color: white;" >Morado</option>
+  <option value="100000000" style="background-color: silver; color: white;" >Gris</option>
+  <option value="1000000000" style="background-color: white; color: black;" >Blanco</option>
+</select>
+ 
+	<br>
+  <input type="Button" style="display: block; text-align: center; margin: auto; width: 300px; background-color:silver;"  name="" value="CALCULAR" onclick="calcular()" class="btn btn-primary">
+  <label for="resultado">Resultado:</label>
+  <br>
+  <input type="text" class="form-control" id="c" name="c" placeholder="Resultado">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+	</div>
+
+  	</form>
+      
+</div>
+ <!-- Fin de la calculadora de resistencia -->
+ 
+</body>
+
+<footer>
+
+  <style>
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #675432;
+        color: white;
+        text-align: center;
+      }
+      </style>
+      
+      <div class="footer">
+  <h8>
+        Creado Por: Nicolas Muñoz Sandoval<br>
+        Curso: Programación de Sitios Web<br>
+        Codigo: 301127A_764<br>
+  </h8>
+      </div> 
+ </footer>
+</html>
